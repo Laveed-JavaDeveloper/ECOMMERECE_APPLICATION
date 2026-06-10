@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" th:lang="${#locale.language}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed</title>
+    <style>
+        :root { color-scheme: dark; --border:rgba(148,163,184,.16); --accent:#f59e0b; --text:#e5eefb; --muted:#94a3b8; }
+        * { box-sizing:border-box; }
+        body { margin:0; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(135deg,#07111f 0%, #0f172a 100%); color:var(--text); padding:1.5rem; }
+        .wrap { max-width: 860px; margin: 0 auto; }
+        .panel { background: rgba(16,25,43,.92); border:1px solid var(--border); border-radius:24px; padding:1.4rem; }
+        .button { display:inline-flex; align-items:center; justify-content:center; padding:.85rem 1.15rem; border-radius:999px; background:var(--accent); color:#111827; text-decoration:none; font-weight:700; }
+        .muted { color: var(--muted); }
+    </style>
+</head>
+<body>
+<main class="wrap">
+    <section class="panel">
+        <h1 style="margin-top:0;">Order Confirmed</h1>
+        <p class="muted">Thank you for shopping with our men’s fashion store. Your order has been created successfully.</p>
+        <p><strong>Order ID:</strong> <span th:text="${order.id}"></span></p>
+        <p><strong>Total:</strong> <span th:text="'₹' + ${#numbers.formatDecimal(order.totalAmount,1,2)}"></span></p>
+        <p><strong>Status:</strong> <span th:text="${order.status}"></span></p>
+        <a class="button" th:href="@{/}">Back to catalog</a>
+    </section>
+</main>
+</body>
+</html>

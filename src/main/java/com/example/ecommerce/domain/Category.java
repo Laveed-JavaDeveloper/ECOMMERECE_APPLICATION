@@ -1,0 +1,22 @@
+package com.example.ecommerce.domain;
+
+public enum Category {
+    SHIRTS_FULL,
+    SHIRTS_HALF,
+    SHIRTS_FORMAL,
+    SHIRTS_PARTY,
+    SHIRTS_CASUAL,
+    PANTS_FORMAL,
+    PANTS_PARTY,
+    PANTS_CASUAL,
+    TSHIRTS_FULL,
+    TSHIRTS_ROUND,
+    TSHIRTS_POLO,
+    TRACKPANTS_CARGO,
+    TRACKPANTS_SPORTS,
+    SHOES_FORMAL,
+    SHOES_PARTY,
+    SHOES_CASUAL,
+    HOODIES,
+    SHORTS
+}
