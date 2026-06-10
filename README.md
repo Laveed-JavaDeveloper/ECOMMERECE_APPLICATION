@@ -1,4 +1,5 @@
 # E-Commerce Application
+========================
 
 A simple Spring Boot e-commerce demo built with Java 21. The app includes a home page, an inventory page backed by H2, and a minimal security setup for local development.
 
